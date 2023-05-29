@@ -12,7 +12,7 @@ export PATH=$HOME/.local/bin:$PATH
 sudo pacman -S go --noconfirm
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
-makepkg -si
+echo -e "y" | makepkg -si
 cd ..
 rm -rf yay-git
 
