@@ -1,4 +1,4 @@
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 sudo pacman -S neovim python3 cargo --noconfirm
 cd ~
 git clone https://github.com/LunarVim/LunarVim.git
@@ -16,6 +16,8 @@ cd yay-git
 echo -e "y" | makepkg -si
 cd ..
 rm -rf yay-git
+
+yay -Syu --noconfirm
 
 sudo pacman -S sddm --noconfirm
 yay -S dwm --noconfirm
