@@ -1,5 +1,5 @@
 sudo pacman -Syu --noconfirm
-sudo pacman neovim python3 cargo go sddm --noconfirm
+sudo pacman git neovim python3 cargo go sddm --noconfirm
 cd ~
 
 git clone https://aur.archlinux.org/yay-git.git
