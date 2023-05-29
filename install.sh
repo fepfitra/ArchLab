@@ -10,7 +10,7 @@ cd ..
 rm -rf yay-git
 
 yay -Syu --noconfirm
-yay -S dwm imlib2 zsh manjaro-zsh-config --noconfirm
+yay -S dwm imlib2 zsh manjaro-zsh-config anydesk-bin --noconfirm
 
 git clone https://github.com/LunarVim/LunarVim.git
 cd LunarVim
@@ -37,7 +37,10 @@ fi
 export PATH=$HOME/.local/bin:$PATH
 
 mkdir ~/.dwm
-echo "slstatus &" > ~/.dwm/autostart.sh
+echo "
+slstatus &
+anydesk &
+" > ~/.dwm/autostart.sh
 mkdir ~/theme
 cd ~/theme
 git clone https://github.com/0x73hahd/dwm-config
