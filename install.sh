@@ -10,7 +10,7 @@ cd ..
 rm -rf yay-git
 
 yay -Syu --noconfirm
-yay -S dwm imlib2 zsh manjaro-zsh-config anydesk-bin alacritty --noconfirm
+yay -S dwm imlib2 zsh manjaro-zsh-config anydesk-bin alacritty microsoft-edge-stable-bin --noconfirm
 
 git clone https://github.com/LunarVim/LunarVim.git
 cd LunarVim
@@ -45,15 +45,16 @@ anydesk &
 mkdir ~/theme
 cd ~/theme
 git clone https://github.com/0x73hahd/dwm-config
-cd dwm-config/source
+cd dwm-config
+cp -r ./.config/* ~/.config/
+cd source
 make
 sudo make install
 cd ../slstatus
 make
 sudo make install
 
-mkdir ~/.fonts
-cd ~/.fonts
+cd ~/.local/share/fonts/
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf
@@ -63,3 +64,10 @@ cd ~/theme
 git clone https://github.com/ronniedroid/getnf.git
 cd getnf
 ./install.sh
+
+sudo mkdir /etc/sddm.conf.d/
+sudo echo "
+[Autologin]
+User=$(whoami)
+Session=dwm
+" > /etc/sddm.conf.d/autologin.conf
