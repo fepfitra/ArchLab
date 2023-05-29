@@ -10,7 +10,7 @@ cd ..
 rm -rf yay-git
 
 yay -Syu --noconfirm
-yay -S dwm --noconfirm
+yay -S dwm imlib2 --noconfirm
 
 git clone https://github.com/LunarVim/LunarVim.git
 cd LunarVim
