@@ -10,7 +10,7 @@ cd ..
 rm -rf yay-git
 
 yay -Syu --noconfirm
-yay -S dwm imlib2 zsh manjaro-zsh-config anydesk-bin --noconfirm
+yay -S dwm imlib2 zsh manjaro-zsh-config anydesk-bin alacritty --noconfirm
 
 git clone https://github.com/LunarVim/LunarVim.git
 cd LunarVim
