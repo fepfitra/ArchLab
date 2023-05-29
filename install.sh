@@ -1,5 +1,6 @@
 sudo pacman -Syu --noconfirm
 sudo pacman -S git neovim python3 cargo go sddm --noconfirm
+sudo systemctl enable sddm
 cd ~
 
 git clone https://aur.archlinux.org/yay-git.git
