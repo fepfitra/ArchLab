@@ -47,3 +47,15 @@ sudo make install
 cd ../slstatus
 make
 sudo make install
+
+mkdir ~/.fonts
+cd ~/.fonts
+wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
+wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf
+wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf
+wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf
+
+cd ~/theme
+git clone https://github.com/ronniedroid/getnf.git
+cd getnf
+./install.sh
