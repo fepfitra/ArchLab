@@ -1,4 +1,4 @@
-sudo pacman -S go neovim python3 cargo --noconfirm
+sudo pacman -S neovim python3 cargo --noconfirm
 cd ~
 git clone https://github.com/LunarVim/LunarVim.git
 cd LunarVim
@@ -9,6 +9,7 @@ echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.zshrc
 echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
 export PATH=$HOME/.local/bin:$PATH
 
+sudo pacman -S go --noconfirm
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
 makepkg -si
