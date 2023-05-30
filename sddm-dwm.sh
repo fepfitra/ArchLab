@@ -5,7 +5,7 @@ INSTALLING SDDM AND DWM
 "
 
 sudo pacman -Syu --noconfirm
-sudo pacman -S sddm --noconfirm
+sudo pacman -S sddm wget --noconfirm
 sudo systemctl enable sddm
 
 yay -Syu --noconfirm
@@ -21,6 +21,7 @@ mkdir ~/theme
 cd ~/theme
 git clone https://github.com/0x73hahd/dwm-config
 cd dwm-config
+mkdir ~/.config
 cp -r ./.config/* ~/.config/
 cd source
 make
@@ -29,6 +30,9 @@ cd ../slstatus
 make
 sudo make install
 
+mkdir ~/.local
+mkdir ~/.local/share
+mkdir ~/.local/fonts
 cd ~/.local/share/fonts/
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf
