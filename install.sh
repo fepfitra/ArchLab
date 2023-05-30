@@ -42,6 +42,7 @@ echo "
 slstatus &
 anydesk &
 " > ~/.dwm/autostart.sh
+chmod +x ~/.dwm/autostart.sh
 mkdir ~/theme
 cd ~/theme
 git clone https://github.com/0x73hahd/dwm-config
