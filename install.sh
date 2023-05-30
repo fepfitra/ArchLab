@@ -66,9 +66,3 @@ git clone https://github.com/ronniedroid/getnf.git
 cd getnf
 ./install.sh
 
-sudo mkdir /etc/sddm.conf.d/
-sudo echo "
-[Autologin]
-User=$(whoami)
-Session=dwm
-" > /etc/sddm.conf.d/autologin.conf
