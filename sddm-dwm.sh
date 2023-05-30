@@ -32,7 +32,7 @@ sudo make install
 
 mkdir ~/.local
 mkdir ~/.local/share
-mkdir ~/.local/fonts
+mkdir ~/.local/share/fonts
 cd ~/.local/share/fonts/
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf
