@@ -1,3 +1,4 @@
+sudo -v -A 60
 sudo pacman -Syu --noconfirm
 sudo pacman -S git neovim python3 cargo go sddm --noconfirm
 sudo systemctl enable sddm
