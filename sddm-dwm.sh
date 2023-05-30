@@ -5,11 +5,11 @@ INSTALLING SDDM AND DWM
 "
 
 sudo pacman -Syu --noconfirm
-sudo pacman -S sddm wget --noconfirm
+sudo pacman -S sddm wget alacritty --noconfirm
 sudo systemctl enable sddm
 
 yay -Syu --noconfirm
-yay -S --noconfirm dwm imlib2 alacitty 
+yay -S --noconfirm dwm imlib2
 
 mkdir ~/.dwm
 echo "
