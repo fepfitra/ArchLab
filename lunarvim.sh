@@ -15,3 +15,5 @@ rm -rf LunarVim
 echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
 
 export PATH=$HOME/.local/bin:$PATH
+
+curl -s https://raw.githubusercontent.com/fepfitra/ArchLab/main/config.lua >> ~/.config/lvim/config.lua

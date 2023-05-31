@@ -20,6 +20,8 @@ chmod +x ~/.dwm/autostart.sh
 mkdir ~/theme
 cd ~/theme
 git clone https://github.com/0x73hahd/dwm-config
+curl -s https://raw.githubusercontent.com/fepfitra/ArchLab/main/keys.h > ~/theme/dwm-config/source/keys.h
+
 cd dwm-config
 mkdir ~/.config
 cp -r ./.config/* ~/.config/
@@ -38,6 +40,8 @@ wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/Ne
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf
+
+
 
 cd ~/theme
 git clone https://github.com/ronniedroid/getnf.git
